@@ -17,9 +17,9 @@ SVM中文名称是支持向量机，解决的问题很普遍——分类。假�
 也就是满足
 $$
 
-\max\limits_{W,b}  \min\limits\_i   dist(x\_i, W,b)y\_i  
+\max\limits_{W,b}  \min\limits_i   dist(x_i, W,b)y_i  
 \\  
- =\max\limits_{W,b}   \min\limits\_i  \frac{W^Tx\_i+b}{\|\|W\|\|}y\_i
+ =\max\limits_{W,b}   \min\limits_i  \frac{W^Tx_i+b}{||W||}y_i
 
 $$
 
