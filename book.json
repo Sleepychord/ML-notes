@@ -6,7 +6,7 @@
     "disqus",
     "prism",
     "-highlight",
-    "splitter"
+    "splitter",
   ],
   "pluginsConfig": {
 
