@@ -18,4 +18,4 @@ $$
 即$$
 \nabla F = \lambda_1\nabla h_1 + \lambda_2\nabla h_2 + ... + \lambda_m\nabla h_m
 $$
-在极值点处成立。结合m各限制函数为零本身，可以得到n+m个方程。
+在极值点处成立。结合m各限制函数为零本身，可以得到n+m个n+m元方程。
