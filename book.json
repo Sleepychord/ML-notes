@@ -7,7 +7,7 @@
     "prism",
     "-highlight",
     "splitter",
-    "katex" 
+    "mathjax" 
   ],
   "pluginsConfig": {
     "disqus": {
