@@ -11,7 +11,7 @@
   ],
   "pluginsConfig": {
     "disqus": {
-      "shortName": "webpack-handbook"
+      "shortName": "ML-notes"
     }
   }
 }
