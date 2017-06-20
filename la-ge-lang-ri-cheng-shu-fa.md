@@ -22,4 +22,11 @@ $$
 如果我们记拉格朗日函数为$$
 J(x,\lambda) = F(x) + \sum\limits_{i=1}^{m} \lambda_ih_i(x)
 $$
-这个n+m元方程组就可以写成
+这个n+m元方程组就可以写成$$ \left\{
+\begin{aligned}
+& \frac{\partial J}{x_i}= 0\\
+& = & \sin(t) \\
+& = & \frac xy
+\end{aligned}
+\right.
+$$
