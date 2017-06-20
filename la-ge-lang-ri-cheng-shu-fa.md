@@ -24,9 +24,9 @@ J(x,\lambda) = F(x) + \sum\limits_{i=1}^{m} \lambda_ih_i(x)
 $$
 这个n+m元方程组就可以写成$$ \left\{
 \begin{aligned}
-& \frac{\partial J}{x_i}= 0\\
-& = & \sin(t) \\
-& = & \frac xy
+& \frac{\partial J}{x_i}= 0 &(i=1,...,n)\\
+& \frac{\partial J}{\lambda_i}= 0& (i=1,...,m)
 \end{aligned}
 \right.
 $$
+至此我们将有限制的多元函数极值问题转化成了解非线性方程组的问题，当然这个问题仍然并非那么简单，但是很多问题中我们可以手动进行计算化简；如果足够光滑，解也比较唯一，我们可以使用牛顿迭代法解非线性方程组。
