@@ -41,4 +41,5 @@ $$
 \frac{\nabla J}{\nabla W} = 0 \rightarrow W = \sum\limits_{i=1}^n \lambda_iy_ix_i\\
 \frac{\nabla J}{\nabla b} = 0 \rightarrow \sum\limits_{i=1}^n\lambda_iy_i = 0
 $$
-代入拉格朗日函数容易算出
+代入拉格朗日函数容易算出$$J(W,b,\lambda) = \sum\limits_{i=1}^n\lambda_i - \frac{1}{2}\sum\limits_{i,j=1}^n\lambda_i\lambda_jy_iy_jx_i^Tx_j$$
+剩下的KKT条件：
