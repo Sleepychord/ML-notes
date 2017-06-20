@@ -5,7 +5,6 @@
   "language": "zh",
   "plugins": [
     "disqus",
-    "editlink",
     "prism",
     "-highlight",
     "splitter"
