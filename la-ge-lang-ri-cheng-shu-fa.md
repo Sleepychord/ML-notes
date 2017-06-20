@@ -19,3 +19,7 @@ $$
 \nabla F = \lambda_1\nabla h_1 + \lambda_2\nabla h_2 + ... + \lambda_m\nabla h_m
 $$
 在极值点处成立。结合m各限制函数为零本身，可以得到n+m个n+m元方程。
+如果我们记拉格朗日函数为$$
+J(x,\lambda) = F(x) + \sum\limits_{i=1}^{m} \lambda_ih_i(x)
+$$
+这个n+m元方程组就可以写成
