@@ -75,4 +75,4 @@ $$
 这个函数与之前讨论的L有什么关系吗？我们来看一个简单的推导。（为了写起来简单，我们下面的$$\lambda$$限制中的$$\lambda_j(j=m_1+1,...m_2) \geq 0$$在写的时候省略，但是所有的$$\lambda$$都在满足这个限制的条件下取值。）
 > $$(\forall x_0, \forall \lambda_0)D(\lambda_0) = \min\limits_x J(x,\lambda_0) \leq J(x_0, \lambda_0)\leq 
 \max\limits_{\lambda}J(x_0,\lambda)= L(x_0)$$ 
-这说明$$\max\limits_\lambda$$
+这说明$$\max\limits_\lambda D(\lambda) \leq \min\limits_x L(x)$$
