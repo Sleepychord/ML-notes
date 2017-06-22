@@ -61,6 +61,15 @@ $$ \left\{
 \end{aligned}
 \right.
 $$
-这组条件中有不等式约束，就很难使用牛顿迭代法求解了。但特殊的问题通常有更好的性质，例如凸问题等。
+这组条件中有不等式约束，就很难使用牛顿迭代法求解了。但特殊的问题通常有更好的性质，例如凸问题等。如果想去掉这些不等式约束，不妨看一下我们下面讲的拉格朗日对偶的内容。
 ##拉格朗日对偶
-考虑函数$$\max\limits_{\lambda,\lambda_j(j=m_1+1,...m_2) \geq 0} J(x,\lambda)$$。当x满足约束条件的时候，$$\sum\limits_{j=1}^{m_1}\lambda_jh_j(x) = 0, \sum\limits_{j=m_1+1}^{m_2}\lambda_jh_j(x) \leq 0,$$因此$$F(x) = \max\limits_{\lambda,\lambda_j(j=m_1+1,...m_2) \geq 0} J(x,\lambda)$$
+考虑函数$$L(x)=\max\limits_{\lambda,\lambda_j(j=m_1+1,...m_2) \geq 0} J(x,\lambda)$$。
+* 当x满足约束条件的时候，$$\sum\limits_{j=1}^{m_1}\lambda_jh_j(x) = 0, \sum\limits_{j=m_1+1}^{m_2}\lambda_jh_j(x) \leq 0。$$最大值在$$\lambda = 0$$的时候取得且$$L(x)=F(x)$$。
+* 当x不满足约束条件的时候，假设不满足$$h_i(x)=0$$，我们只需让$$L(x)$$中系数$$\lambda_i\rightarrow \infty$$即可让$$J(x,\lambda)\rightarrow \infty$$。此时$$L(x)\rightarrow \infty$$。不满足不等式约束的情况同理。
+
+
+因此$$F(x) = \max\limits_{\lambda,\lambda_j(j=m_1+1,...m_2) \geq 0} J(x,\lambda)$$，于是我们可以对原问题做一个转化
+
+$$
+\min F(x) = \min\limits_x\max\limits_{\lambda,\lambda_j(j=m_1+1,...m_2) \geq 0} J(x,\lambda)
+$$
