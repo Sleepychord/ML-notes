@@ -63,4 +63,4 @@ $$ \left\{
 $$
 这组条件中有不等式约束，就很难使用牛顿迭代法求解了。但特殊的问题通常有更好的性质，例如凸问题等。
 ##拉格朗日对偶
-$$f(x) = max\limits_{\lambda,\lambda_j \geq 0} J$$
+考虑函数$$\max\limits_{\lambda,\lambda_j(j=m_1+1,...m_2) \geq 0} J(x,\lambda)$$。当x满足约束条件的时候，$$\sum\limits_{j=1}^{m_1}\lambda_jh_j(x) = 0, \sum\limits_{j=m_1+1}^{m_2}\lambda_jh_j(x) \leq 0,$$因此$$F(x) = \max\limits_{\lambda,\lambda_j(j=m_1+1,...m_2) \geq 0} J(x,\lambda)$$
