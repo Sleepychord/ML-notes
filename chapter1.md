@@ -37,12 +37,14 @@ $$
 
 至此发现这是一个经典的[二次规划](https://en.wikipedia.org/wiki/Quadratic_programming)的问题，还是比较简单的那种（$$Q=I,c^T=0$$）。可以直接调用内点法等各种算法求解，但是通常x维度很高（且使用核函数的时候会向高维映射），效率不一定好。
 ## 优化
-这是一个带约束的极值问题，我们使用对偶方法看一下其对偶问题是否会更简单。（见对应章节）
-首先使用KKT条件中对W,b偏导为零，可以解出
+
+这是一个带约束的极值问题，自然想到拉格朗日乘数法（见对应章节）
+由于我们希望寻找极值点，而KKT条件又是极值点的必要条件，我们可以尝试使用它们来化简问题。首先使用KKT条件中对W,b偏导为零，可以解出
 $$
 \frac{\nabla J}{\nabla W} = 0 \rightarrow W = \sum\limits_{i=1}^n \lambda_iy_ix_i\\
 \frac{\nabla J}{\nabla b} = 0 \rightarrow \sum\limits_{i=1}^n\lambda_iy_i = 0
 $$
+既然极值点处$$W,b$$可以被$$\lambda$$替代，那么其对偶问题的内层会被消去，最后的形式一定很简单。即
 代入拉格朗日函数容易算出
 $$J(W,b,\lambda) = \sum\limits_{i=1}^n\lambda_i - \frac{1}{2}\sum\limits_{i,j=1}^n\lambda_i\lambda_jy_iy_jx_i^Tx_j$$
 这里的减号是因为限制是大于等于，化成标准要反号。
