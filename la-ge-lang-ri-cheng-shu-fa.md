@@ -72,6 +72,7 @@ $$
 \min\limits_{x \ with \ st. \ 1-m_2} F(x) = \min\limits_x\max\limits_{\lambda,\lambda_j(j=m_1+1,...m_2) \geq 0} J(x,\lambda)
 $$
 这样就从形式上消除了各种限制条件。很多问题中它的对偶问题更加简单，考虑函数$$D(\lambda)=\min\limits_x J(x,\lambda)$$
-这个函数与之前讨论的L有什么关系吗？我们来看一个简单的推导。
+这个函数与之前讨论的L有什么关系吗？我们来看一个简单的推导。为了写起来简单，我们下面的$$\lambda$$限制中的$$\lambda_j(j=m_1+1,...m_2) \geq 0$$省略。
 > $$(\forall x_0, \forall \lambda_0)D(\lambda_0) = \min\limits_x J(x,\lambda_0) \leq J(x_0, \lambda_0)\leq 
-\max\limits_{\lambda,\lambda_j(j=m_1+1,...m_2) \geq 0}J(x_0,\lambda)= L(x_0)$$ 
+\max\limits_{\lambda}J(x_0,\lambda)= L(x_0)$$ 
+这说明$$\max\limits_\lambda$$
