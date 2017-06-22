@@ -6,7 +6,7 @@
 $$
 min \ F(x), \ st. h(x)_i=0(i = 0,1,2...,m)
 $$
-其中x为n维向量，不妨假设这里的函数足够光滑，有极值。
+其中x为n维向量，不妨假设这里的函数是“良好的”，足够光滑，有极值。更详细的信息可以看[维基百科](https://en.wikipedia.org/wiki/Karush–Kuhn–Tucker_conditions#Regularity_conditions_.28or_constraint_qualifications.29)的正则条件。
 注意到一个非常重要的性质：
 > 极值点处，目标函数梯度与限制函数的解空间垂直
 
@@ -76,4 +76,4 @@ $$
 > $$(\forall x_0, \forall \lambda_0)D(\lambda_0) = \min\limits_x J(x,\lambda_0) \leq J(x_0, \lambda_0)\leq 
 \max\limits_{\lambda}J(x_0,\lambda)= L(x_0)$$ 
 
-这说明$$\max\limits_\lambda D(\lambda) \leq \min\limits_x L(x) = 原问题的解$$
+这说明$$\max\limits_\lambda D(\lambda) \leq \min\limits_x L(x) = 原问题的解$$，这里的等号能不能取到也是一个值得讨论的事情
