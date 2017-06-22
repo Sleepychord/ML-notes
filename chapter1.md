@@ -49,5 +49,6 @@ $$
 $$J^*(W,b,\lambda) = \sum\limits_{i=1}^n\lambda_i - \frac{1}{2}\sum\limits_{i,j=1}^n\lambda_i\lambda_jy_iy_jx_i^Tx_j$$
 推导时注意这里的减号是因为限制是大于等于，化成标准要反号。***的意思是只在极值点处成立。
 
-对偶问题$$D^*(\lambda)=\min\limits_{W,b} J^*(W,b,\lambda) = J^*(\lambda)$$
-剩下的KKT条件：
+对偶问题$$D^*(\lambda)=\min\limits_{W,b} J^*(W,b,\lambda) = J^*(\lambda)\\
+st. \ \lambda_i \geq 0
+$$
