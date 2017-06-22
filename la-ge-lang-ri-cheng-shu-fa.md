@@ -76,4 +76,6 @@ $$
 > $$(\forall x_0, \forall \lambda_0)D(\lambda_0) = \min\limits_x J(x,\lambda_0) \leq J(x_0, \lambda_0)\leq 
 \max\limits_{\lambda}J(x_0,\lambda)= L(x_0)$$ 
 
-这说明$$\max\limits_\lambda D(\lambda) \leq \min\limits_x L(x) = 原问题的解$$，这里的等号能不能取到也是一个值得讨论的事情，如果能，称问题具有**强对偶性**。此时可以通过求对偶问题的解来解原问题，他们的极值点相同且满足KKT条件。
+这说明$$\max\limits_\lambda D(\lambda) \leq \min\limits_x L(x) = 原问题的解$$，这里的等号能不能取到也是一个值得讨论的事情，如果能，称问题具有**强对偶性**。此时可以通过求对偶问题$$\max\limits_\lambda D(\lambda)$$的解来解原问题，他们的极值点相同且满足KKT条件。
+
+怎样的问题有强对偶性？这里有一个充分条件：
