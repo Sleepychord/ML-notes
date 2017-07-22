@@ -13,6 +13,7 @@ $$loss = -\sum p_i\log q_i = -(p_0\log q_0 + p_1\log q_1) = -[(1-y)\log (1-y') +
 ## KL divergence（相对熵）
 $$D_{KL}(p||q)=\sum\limits_i p_i \log \frac{p_i}{q_i} = H(p,q) - H(p)$$
 是一种使用真实分布p代替分布q的信息增益（实际上减少浪费）。经常用来度量分布的相似性。
+由于真实分布p往往固定，优化KL散度和优化交叉熵等价。
 ## 条件熵
 设随机变量X、Y之间有关联，那么条件熵即$$H(X|Y) = \mathbb{E}_{y\sim p_Y}H(X|y)=\sum\limits_{x,y}p_{x,y}\log \frac{p_{x,y}}{p_y}$$
 ## 互信息
