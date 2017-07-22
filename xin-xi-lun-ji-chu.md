@@ -15,3 +15,5 @@ $$loss = -\sum p_i\log q_i = -(p_0\log q_0 + p_1\log q_1) = -[(1-y)\log (1-y') +
 ## KL divergence（相对熵）
 $$D_{KL}(p||q)=\sum\limits_i p_i \log \frac{p_i}{q_i} = H(p,q) - H(p)$$
 是一种使用真实分布p代替分布q的信息增益（实际上减少浪费）。经常用来度量分布的相似性。
+## 互信息
+$$I(X;Y) = H(X) - H(X|Y)$$
