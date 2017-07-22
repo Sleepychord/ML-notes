@@ -10,3 +10,4 @@ $$I(S)=\mathbb{E}(-\log  p_i)=-\sum p_i\log p_i$$
 假设我们认为随机事件S的概率分布是q，但实际上是p。我们按照q给事件设计了最优编码，那么消息的期望长度$$H(p,q)=\sum -p_i\log q_i$$。
 经常用来作为loss function，以0、1分布为例，我们预测的概率为$$y'$$，label为$$y$$（通常为0、1）。
 $$loss = -\sum p_i\log q_i = -(p_0\log q_0 + p_1\log q_1) = -[(1-y)\log (1-y') + y\log y']$$
+
