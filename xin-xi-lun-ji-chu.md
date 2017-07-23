@@ -17,4 +17,4 @@ $$D_{KL}(p||q)=\sum\limits_i p_i \log \frac{p_i}{q_i} = H(p,q) - H(p)$$
 ## 条件熵
 设随机变量X、Y之间有关联，那么条件熵即$$H(X|Y) = \mathbb{E}_{y\sim p_Y}H(X|y)=\sum\limits_{x,y}p_{x,y}\log \frac{p_{x,y}}{p_y}$$
 ## 互信息
-$$I(X;Y) = H(X) - H(X|Y)$$ 是知道Y后的信息增益。如果XY独立，那么I(X;Y)为0。如果存在Y到X的函数，那么将得到最大值。
+$$I(X;Y) = H(X) - H(X|Y)$$ 是知道Y后的信息增益。如果XY独立，那么I(X;Y)为0。如果存在Y到X的函数，那么将得到最大值H(x)。
