@@ -22,3 +22,6 @@ $$f(\sum a_ix_i)\leq \sum a_if(x_i), \sum a_i = 1$$
 设随机变量X、Y之间有关联，那么条件熵即$$H(X|Y) = \mathbb{E}_{y\sim p_Y}H(X|y)=\sum\limits_{x,y}p_{x,y}\log \frac{p_{x,y}}{p_y}$$
 ## 互信息
 $$I(X;Y) = H(X) - H(X|Y)$$ 是知道Y后的信息增益。如果XY独立，那么I(X;Y)为0。如果存在Y到X的函数，那么将得到最大值H(x)。
+###  Variational Information Maximization
+计算互信息中条件熵需要后验分布，这点是及其困难的，虽然我们通过蒙特卡洛方法可以采样，但是内层的概率很难估计导致结果不准确。
+由于上面分析过$$D_{KL}\geq 0$$我们可以使用任意一种自己模型分布q使用H(p,q)代替H(p)得到一个上界。
