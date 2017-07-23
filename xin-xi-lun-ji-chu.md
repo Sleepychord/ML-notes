@@ -25,4 +25,4 @@ $$I(X;Y) = H(X) - H(X|Y)$$ 是知道Y后的信息增益。如果XY独立，那�
 ###  Variational Information Maximization
 计算互信息中条件熵需要后验分布，这点是及其困难的，虽然我们通过蒙特卡洛方法可以采样，但是内层的概率很难估计导致结果不准确。
 由于上面分析过$$D_{KL}\geq 0$$我们可以使用任意一种自己模型分布q使用H(p,q)代替H(p)得到一个上界。条件熵的内层可以同样处理。
-$$\mathbb{E}_{y\sim Y}$$
+$$H(X|Y) \leq \mathbb{E}_{y\sim Y}[\mathbb{E}_{x\sim p(x|y)}-\log q(x|y)]$$
